@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<License xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Key="7oSl/D4BAN50BBH4gcSlZaIly/C6x1UmOK631FMsMZ3/lXoRlgzD1NwegnmQGJ8FwId02bZ4bY/iFWOradkndPsVR+iKbFDKFyXW15tdMdph6J48mFsken9sGwBE+moFZVYU1tBv0AhlvgY21yj229tjm5au3y8mNKSuYMYYY9DNXBjxwCVqc6EmvxDh0/MWn+aDPP4jWK96/8GY422XqjaxjiqrjKw3Web3OPQiv4iGs4EpFnokeBfbVgqFs1A7phzwmNaoEPI5cbgH0nskDAdAkellJdLkyZAQLJR+XHPVXZEPKHwc2FVkwf0EIksVMJl1yh8ViQyoLRKqNy6ZcrqqCqB5oSsQhNFVezo85QiujvI9r8kbKiqv0sFKDaXVzPAsB9/OzItJgnPkMBeSJ7FR8f44bXhY4AzlW93i/iR6pQwugI0prDLjncU9mhHLaYf/NQMm7cwuihgyffqR64o4Xg/ydzBwOJEhjIgx7jx27QbLK9hH8XNdz+1BPtO2dhY+0Q03A2GfStvuQWmugf0FN6n8LmVXD3OINJNdrmeD+ysJdOXuUFKkTRh0lARShPr/7bD6gUX6cggnzHY9FbGxy4v448/aOMzyrQxobImj8jEqYgGLkLlY5j/3E/lsIKp9qYEgh5BNPR6BQO0G11Eqn8boukvrU/LwUoMQQrcr9/kWRHPQOc9TDH3XM5ELJJB+6r/edXGa76kkLfZwu/sc/hdv4RPzEUuwQPZ3SxJu6WB/dqnX1uup9bgRcRv+BXowl5OtsXjP/slht8X+9qMSSMnYNzzhNI4j+9Rc3kk6M88LrkVR6+byc9Uj8QdUCR6zrRr6bBmjL2JSJ5TDJ3+6VpA2XeYfN+XEWIjDz0dXGfCoqc5ZMd8uocWYLxau6c5+ZyQcGd6KzkZ5beqKi+U/mWlLb3fLtcCjxOrAM8dFEeQ2SNo/JQJItcOUCBufrLbdm2wU9NbibU+icGnyI6S9TBahIyuscHoPTJ/nXdMXihBH9AQymSCldpFtICZxza8uf3WPTRz7XYCHg4n51cjgkYh2NZLDckDFE0Rx8eXONlBXEIzIoAGQL2r3BopwaMvD9PJh1qOc+qJ/fjDOJqePlPnShik2NjxiLDcjYNxK4oTjUgC+7DIdfSCL4oQTUwiB9U/25dySTXnwwt1+RVWfhYLesR+VNn1tdhNPl6IhpJXuf52utgmxpHQXr8bPSaNTAg+FbrKvekA9e4Ze9o1c9zhlAO3nzLQV7Xlq0ns3LagPIofq6L7zxbTwlDhOWlXFyO/3/K5ZWzlaKWLEsVUX2rthmLgRWCmMCNMWNePrLDYMtGmxeMUgrNoiD3+Utu0ZMByil3+hFVxL26tLjRM40hjnzYicYpAp8obhDmEvButDNlVr2jrLJJIIde4+L97K8mDCb/IhwXAywM7jkqBS329XDoVV" Version="1.1">
+	<Type>Runtime</Type>
+	<Username>Kiandra IT</Username>
+	<Email>software.development.team@kiandra.com</Email>
+	<Organization>Kiandra IT</Organization>
+	<LicensedDate>2011-10-31T00:00:00Z</LicensedDate>
+	<Products>
+		<Product>
+			<Name>Spire.XLS Standard Edition</Name>
+			<Version>5.8.5</Version>
+			<Subscription>
+				<NumberOfPermittedDeveloper>1</NumberOfPermittedDeveloper>
+				<NumberOfPermittedSite>1</NumberOfPermittedSite>
+			</Subscription>
+		</Product>
+	</Products>
+	<Issuer>
+		<Name>e-iceblue</Name>
+		<Email>sales@e-iceblue.com</Email>
+		<Url>http://www.e-iceblue.com</Url>
+	</Issuer>
+</License>

@@ -1,0 +1,1142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F6760B70-BABA-4E6D-9145-B0C955322F79}</ProjectGuid>
+    <ProjectTypeGuids>{e53f8fea-eae0-44a6-8774-ffd645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DetectorInspector</RootNamespace>
+    <AssemblyName>DetectorInspector</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <MvcProjectUpgradeChecked>true</MvcProjectUpgradeChecked>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PublishDatabases>false</PublishDatabases>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Staging|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\DetectorInspector.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <PublishDatabases>false</PublishDatabases>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'KiandraStaging|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\DetectorInspector.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Staging|x86'">
+    <OutputPath>bin\x86\Staging\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\x86\Release\DetectorInspector.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SlowCheetahTargets Condition=" '$(SlowCheetahTargets)'=='' ">$(LOCALAPPDATA)\Microsoft\MSBuild\SlowCheetah\v1\SlowCheetah.Transforms.targets</SlowCheetahTargets>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ABCpdf, Version=8.1.0.8, Culture=neutral, PublicKeyToken=a7a0b3f5184f2169, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference Assemblies\ABCpdf.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AntiXSSLibrary, Version=3.1.3524.16873, Culture=neutral, PublicKeyToken=d127efab8a9c114f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference Assemblies\AntiXSSLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="AntiXssModule, Version=1.0.3524.17039, Culture=neutral, PublicKeyToken=d127efab8a9c114f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference Assemblies\AntiXssModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime, Version=3.3.1.7705, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging, Version=1.2.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference Assemblies\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.NLog, Version=1.2.0.2, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference Assemblies\Common.Logging.NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.0.5022.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference Assemblies\DocumentFormat.OpenXml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.AspNet, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.AspNet.4.0.4.12182\lib\net40-full\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.0.4.12182\lib\net40-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Core.4.0.4.12182\lib\net40-full\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Consumer.4.0.4.12182\lib\net40-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.Core.4.0.4.12182\lib\net40-full\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.0.4.12182\lib\net40-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+    </Reference>
+    <Reference Include="Elmah, Version=1.0.11211.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference Assemblies\Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="Excel">
+      <HintPath>..\Reference Assemblies\Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelLibrary">
+      <HintPath>..\Reference Assemblies\ExcelLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="HibernatingRhinos.Profiler.Appender.v4.0">
+      <HintPath>..\Reference Assemblies\HibernatingRhinos.Profiler.Appender.v4.0.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference Assemblies\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\Reference Assemblies\zip-v1.9\Release\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Kiandra.Data, Version=1.0.912.15, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference Assemblies\Kiandra.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Kiandra.Entities, Version=1.0.912.15, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference Assemblies\Kiandra.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Kiandra.Web.Mvc, Version=2.0.912.15, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference Assemblies\Kiandra.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference Assemblies\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net, Version=2.9.1.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference Assemblies\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference Assemblies\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebPages.OAuth, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.OAuth.2.0.20710.0\lib\net40\Microsoft.Web.WebPages.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.8\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference Assemblies\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference Assemblies\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Caches.SysCache, Version=2.0.0.1001, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference Assemblies\NHibernate.Caches.SysCache.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Caches.SysCache2, Version=2.1.2.4000, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference Assemblies\NHibernate.Caches.SysCache2.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Linq, Version=1.0.0.4000, Culture=neutral, PublicKeyToken=444cf6a87fdab271, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference Assemblies\NHibernate.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Search, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference Assemblies\NHibernate.Search.dll</HintPath>
+    </Reference>
+    <Reference Include="NVelocity, Version=1.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference Assemblies\NVelocity.dll</HintPath>
+    </Reference>
+    <Reference Include="RazorEngine">
+      <HintPath>..\Reference Assemblies\RazorEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="RouteDebug, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference Assemblies\RouteDebug.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.DataExport">
+      <HintPath>..\Reference Assemblies\Spire.DataExport.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.DataExport.ResourceMgr">
+      <HintPath>..\Reference Assemblies\Spire.DataExport.ResourceMgr.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.License, Version=1.1.1.4, Culture=neutral, PublicKeyToken=b1144360237c8b3f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference Assemblies\Spire.License.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.XLS">
+      <HintPath>..\Reference Assemblies\Spire.XLS.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap, Version=2.5.3.0, Culture=neutral, PublicKeyToken=e60ad81abae3c223, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference Assemblies\StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.30506.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebGrease, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="WebMatrix.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.Data.2.0.20710.0\lib\net40\WebMatrix.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="WebMatrix.WebData, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.WebData.2.0.30506.0\lib\net40\WebMatrix.WebData.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Solution Items\VersionInfo.cs">
+      <Link>Properties\VersionInfo.cs</Link>
+    </Compile>
+    <Compile Include="App_Start\AuthConfig.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="Areas\Admin\AreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\ImportController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ServiceItemController.cs" />
+    <Compile Include="Areas\Admin\Controllers\SuburbController.cs" />
+    <Compile Include="Areas\Admin\Controllers\UserController.cs" />
+    <Compile Include="Areas\Admin\Controllers\RoleController.cs" />
+    <Compile Include="Areas\Admin\Controllers\HelpController.cs" />
+    <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Admin\ViewModels\ApplicationAreaViewModel.cs" />
+    <Compile Include="Areas\Admin\ViewModels\ChangeUserPasswordViewModel.cs" />
+    <Compile Include="Areas\Admin\ViewModels\ImportViewModel.cs" />
+    <Compile Include="Areas\Admin\ViewModels\ServiceItemViewModel.cs" />
+    <Compile Include="Areas\Admin\ViewModels\EditUserViewModel.cs" />
+    <Compile Include="Areas\Admin\ViewModels\SuburbViewModel.cs" />
+    <Compile Include="Areas\Admin\ViewModels\RoleViewModel.cs" />
+    <Compile Include="Areas\Admin\ViewModels\UserSearchViewModel.cs" />
+    <Compile Include="ApplicationConfig.cs" />
+    <Compile Include="Areas\Agency\AreaRegistration.cs" />
+    <Compile Include="Areas\Agency\Controllers\AgencyGroupController.cs" />
+    <Compile Include="Areas\Agency\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Agency\Controllers\PropertyManagerController.cs" />
+    <Compile Include="Areas\Agency\ViewModels\AgencyGroupViewModel.cs" />
+    <Compile Include="Areas\Agency\ViewModels\AgencyUserViewModel.cs" />
+    <Compile Include="Areas\Agency\ViewModels\AgencyViewModel.cs" />
+    <Compile Include="Areas\Agency\ViewModels\PropertyManagerViewModel.cs" />
+    <Compile Include="Areas\Booking\AreaRegistration.cs" />
+    <Compile Include="Areas\Booking\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Booking\ViewModels\BookingViewModel.cs" />
+    <Compile Include="Areas\Booking\ViewModels\BookingSearchViewModel.cs" />
+    <Compile Include="Areas\Booking\ViewModels\BookingScheduleViewModel.cs" />
+    <Compile Include="Areas\Booking\ViewModels\BookingCancelViewModel.cs" />
+    <Compile Include="Areas\Files\AreaRegistration.cs" />
+    <Compile Include="Areas\Files\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Files\ViewModels\UploadContainerViewModel.cs" />
+    <Compile Include="Areas\PropertyInfo\AreaRegistration.cs" />
+    <Compile Include="Areas\PropertyInfo\Controllers\ChangeLogController.cs" />
+    <Compile Include="Areas\PropertyInfo\Controllers\PrintController.cs" />
+    <Compile Include="Areas\PropertyInfo\Controllers\EmailController.cs" />
+    <Compile Include="Areas\PropertyInfo\ViewModels\BatchViewModelForElectricalQuotes.cs" />
+    <Compile Include="Areas\PropertyInfo\ViewModels\BulkActionViewModel.cs" />
+    <Compile Include="Areas\PropertyInfo\ViewModels\BatchViewModel.cs" />
+    <Compile Include="Areas\PropertyInfo\ViewModels\PropertyInfoSearchViewModel.cs" />
+    <Compile Include="Areas\PropertyInfo\ViewModels\ContactEntryViewModel.cs" />
+    <Compile Include="Areas\PropertyInfo\ViewModels\DetectorViewModel.cs" />
+    <Compile Include="Areas\PropertyInfo\ViewModels\PropertyInfoViewModel.cs" />
+    <Compile Include="Areas\PropertyInfo\Controllers\HomeController.cs" />
+    <Compile Include="Areas\PropertyInfo\Controllers\ContactController.cs" />
+    <Compile Include="Areas\Reporting\AreaRegistration.cs" />
+    <Compile Include="Areas\Reporting\Controllers\HomeController.cs" />
+    <Compile Include="Areas\ServiceSheet\AreaRegistration.cs" />
+    <Compile Include="Areas\ServiceSheet\Controllers\HomeController.cs" />
+    <Compile Include="Areas\ServiceSheet\ViewModels\ElectricalJobViewModel.cs" />
+    <Compile Include="Areas\ServiceSheet\ViewModels\ServiceSheetSearchViewModel.cs" />
+    <Compile Include="Areas\ServiceSheet\ViewModels\ServiceSheetItemViewModel.cs" />
+    <Compile Include="Areas\ServiceSheet\ViewModels\ServiceSheetViewModel.cs" />
+    <Compile Include="Areas\Technician\AreaRegistration.cs" />
+    <Compile Include="Areas\Technician\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Technician\Controllers\TechnicianAvailabilityController.cs" />
+    <Compile Include="Areas\Technician\ViewModels\AvailableTechnicianViewModel.cs" />
+    <Compile Include="Areas\Technician\ViewModels\BookingsViewModel.cs" />
+    <Compile Include="Areas\Technician\ViewModels\ServicesByZoneViewModel.cs" />
+    <Compile Include="Areas\Technician\ViewModels\TechnicianDefaultAvailabilityViewModel.cs" />
+    <Compile Include="Areas\Technician\ViewModels\TechnicianViewModel.cs" />
+    <Compile Include="Areas\Technician\ViewModels\TechnicianAvailabilityViewModel.cs" />
+    <Compile Include="Controllers\AuditController.cs" />
+    <Compile Include="Areas\Admin\Controllers\NotificationController.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DebugController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ReferenceDataController.cs" />
+    <Compile Include="Controllers\SiteController.cs" />
+    <Compile Include="CoreRegistry.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Infrastructure\AreaUrlUtiltity.cs" />
+    <Compile Include="Infrastructure\CsvExtensionMethods.cs" />
+    <Compile Include="Infrastructure\DbExportContext.cs" />
+    <Compile Include="Infrastructure\EnumerableExtensionMethods.cs" />
+    <Compile Include="Infrastructure\HandleDataCurrencyErrorsAttribute.cs" />
+    <Compile Include="Infrastructure\HtmlHelpers\BreadcrumbHtmlHelpers.cs" />
+    <Compile Include="Infrastructure\EnumHelper.cs" />
+    <Compile Include="Infrastructure\HtmlHelpers\CheckBoxListHelpers.cs" />
+    <Compile Include="Infrastructure\HtmlHelpers\CheckBoxListItem.cs" />
+    <Compile Include="Infrastructure\HtmlHelpers\RadioButtonListHelpers.cs" />
+    <Compile Include="Infrastructure\HtmlHelpers\FormHtmlHelper.cs" />
+    <Compile Include="Infrastructure\HtmlHelpers\RadioButtonListItem.cs" />
+    <Compile Include="Infrastructure\HtmlHelpers\SelectHtmlHelpers.cs" />
+    <Compile Include="Infrastructure\HtmlHelpers\VersionHtmlHelpers.cs" />
+    <Compile Include="Infrastructure\JsWindowHelper.cs" />
+    <Compile Include="Infrastructure\QuickBooks\InvoiceTransactionItemBase.cs" />
+    <Compile Include="Infrastructure\QuickBooks\IInvoiceTransactionItem.cs" />
+    <Compile Include="Infrastructure\QuickBooks\InvoiceExport.cs" />
+    <Compile Include="Infrastructure\QuickBooks\InvoiceTransaction.cs" />
+    <Compile Include="Infrastructure\QuickBooks\InvoiceTransactionLineItem.cs" />
+    <Compile Include="Infrastructure\QuickBooks\QuickBooksDataUtil.cs" />
+    <Compile Include="Infrastructure\Security\RequirePermissionAttribute.cs" />
+    <Compile Include="Infrastructure\IModelMetadataProvider.cs" />
+    <Compile Include="Infrastructure\CoreControllerFactory.cs" />
+    <Compile Include="Infrastructure\ModelMetadata.cs" />
+    <Compile Include="Infrastructure\CachedModelMetadataProvider.cs" />
+    <Compile Include="Infrastructure\Security\SecurityExtensions.cs" />
+    <Compile Include="Infrastructure\HtmlHelpers\StringFormatHelper.cs" />
+    <Compile Include="Infrastructure\StringFormatter.cs" />
+    <Compile Include="ModelBinders\CoreModelBinding.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\AgencyTotalsViewModel.cs" />
+    <Compile Include="ViewModels\ChangePasswordViewModel.cs" />
+    <Compile Include="ViewModels\PageHelpViewModel.cs" />
+    <Compile Include="ViewModels\ForgotPasswordViewModel.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs" />
+    <Compile Include="ViewModels\NotificationMessage.cs" />
+    <Compile Include="ViewModels\NotificationMessageType.cs" />
+    <Compile Include="ViewModels\RegisterViewModel.cs" />
+    <Compile Include="ViewModels\UserProfileViewModel.cs" />
+    <Compile Include="ViewModels\ViewModel.cs" />
+    <Compile Include="Views\ViewPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ViewUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Reference Assemblies\PrintHook32.dll">
+      <Link>Components\PrintHook32.dll</Link>
+    </Content>
+    <Content Include="..\Reference Assemblies\PrintHook64.dll">
+      <Link>Components\PrintHook64.dll</Link>
+    </Content>
+    <Content Include="..\Reference Assemblies\Spire.License.dll">
+      <Link>Spire.License.dll</Link>
+    </Content>
+    <Content Include="Areas\Admin\Views\Import\Index.aspx" />
+    <Content Include="Areas\Agency\Views\AgencyGroup\Edit.aspx" />
+    <Content Include="Areas\Agency\Views\AgencyGroup\Index.aspx" />
+    <Content Include="Areas\Agency\Views\Home\AgencyMaster.aspx" />
+    <Content Include="Areas\Agency\Views\Home\AgencySuperUser.aspx" />
+    <Content Include="Areas\Agency\Views\Home\Edit.aspx" />
+    <Content Include="Areas\Agency\Views\Home\Index.aspx" />
+    <Content Include="Areas\Agency\Views\PropertyManager\Edit.ascx" />
+    <Content Include="Areas\Agency\Views\PropertyManager\Index.aspx" />
+    <Content Include="Areas\Agency\Views\PropertyManager\PropertyManager.ascx" />
+    <Content Include="Areas\Booking\Views\Home\Schedule.ascx" />
+    <Content Include="Areas\Booking\Views\Home\Edit.aspx" />
+    <Content Include="Areas\Booking\Views\Home\Index.aspx" />
+    <Content Include="Areas\PropertyInfo\Views\ChangeLog\ChangeLogEntry.ascx" />
+    <Content Include="Areas\PropertyInfo\Views\ChangeLog\Index.aspx" />
+    <Content Include="Areas\PropertyInfo\Views\Contact\Index.aspx" />
+    <Content Include="Areas\PropertyInfo\Views\Home\Booking.aspx" />
+    <Content Include="Areas\PropertyInfo\Views\Home\View.aspx" />
+    <Content Include="Areas\PropertyInfo\Views\Home\ServiceSheet.aspx" />
+    <Content Include="Areas\PropertyInfo\Views\Home\EditDetector.ascx" />
+    <Content Include="Areas\PropertyInfo\Views\Home\Landlord.aspx" />
+    <Content Include="Areas\PropertyInfo\Views\Home\Edit.aspx" />
+    <Content Include="Areas\PropertyInfo\Views\Home\Index.aspx" />
+    <Content Include="Areas\PropertyInfo\Views\Home\Detector.ascx" />
+    <Content Include="Areas\PropertyInfo\Views\Print\BatchDocument.aspx" />
+    <Content Include="Areas\PropertyInfo\Views\Contact\Details.ascx" />
+    <Content Include="Areas\PropertyInfo\Views\Contact\Edit.ascx" />
+    <Content Include="Areas\PropertyInfo\Views\Contact\ContactEntry.ascx" />
+    <Content Include="Areas\PropertyInfo\Views\Contact\AIndex.aspx" />
+    <Content Include="Areas\ServiceSheet\Views\Home\EditElectricalJobItem.ascx" />
+    <Content Include="Areas\ServiceSheet\Views\Home\ElectricalJob.aspx" />
+    <Content Include="Areas\ServiceSheet\Views\Home\Edit.aspx" />
+    <Content Include="Areas\ServiceSheet\Views\Home\EditServiceSheetItem.ascx" />
+    <Content Include="Areas\ServiceSheet\Views\Home\Index.aspx" />
+    <Content Include="bin\Ionic.Zip.dll" />
+    <Content Include="Components\ABCpdfCE7.dll" />
+    <Content Include="Content\Css\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\Css\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\Css\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\Css\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\Css\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\Css\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\Css\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\Css\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\Css\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\Css\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\Css\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\Css\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\Css\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\Css\jquery-ui.css" />
+    <Content Include="Content\Css\Print.css" />
+    <Content Include="Content\Images\delete.png" />
+    <Content Include="Content\Images\footer.png" />
+    <Content Include="Content\Images\header.png" />
+    <Content Include="Content\Images\logo_tasmania.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\optional.png" />
+    <Content Include="Content\Images\print-header.png" />
+    <Content Include="Content\Images\problem.png" />
+    <Content Include="Content\Scripts\dirtyDataCheck.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-ar.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-bg.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-bg1251.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-cat.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-cn.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-cs.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-da.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-de.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-dk.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-el.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-en.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-es.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-fa.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-fi.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-fr.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-gl.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-he.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-hr.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-hr1250.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-hu.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-is.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-it.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-ja.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-lt.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-mne.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-nl.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-no.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-pl.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-pt-br.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-pt.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-ro.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-ru.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-sk.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-sr-latin.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-sr.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-sv.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-th.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-tr.js" />
+    <Content Include="Content\Scripts\i18n\grid.locale-ua.js" />
+    <Content Include="Content\Scripts\jquery-ui.min.js" />
+    <Content Include="Content\Scripts\jquery.autoNumeric.1.0.0.js" />
+    <Content Include="Content\Scripts\jquery.blockUI.js" />
+    <Content Include="Content\Scripts\jquery.jqGrid.src.js" />
+    <Content Include="Content\Scripts\jquery.json.js" />
+    <Content Include="Content\Scripts\jquery.min.js" />
+    <Content Include="EntryNotificationLetterTemplates\DoNotDelete.txt" />
+    <Content Include="favicon.ico" />
+    <Content Include="license.elic.xml" />
+    <Content Include="LinkedDatabaseContent\LogItems\DoNotDelete.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Shared\Appointments.ascx" />
+    <Content Include="Areas\Technician\Views\TechnicianAvailability\AvailableTechnician.ascx" />
+    <Content Include="Areas\Technician\Views\TechnicianAvailability\Edit.ascx" />
+    <Content Include="Areas\Technician\Views\TechnicianAvailability\Index.aspx" />
+    <Content Include="Areas\Technician\Views\TechnicianAvailability\TechnicianAvailability.ascx" />
+    <Content Include="Areas\Technician\Views\Home\Edit.aspx" />
+    <Content Include="Areas\Technician\Views\Home\Index.aspx" />
+    <Content Include="Content\Css\ui.clockpick-1.2.7.css" />
+    <Content Include="Content\Css\ui.jqGrid.css" />
+    <Content Include="Content\Images\battery.png" />
+    <Content Include="Content\Images\card.png" />
+    <Content Include="Content\Images\clean.png" />
+    <Content Include="Content\Images\decibel.png" />
+    <Content Include="Content\Images\electrical.png" />
+    <Content Include="Content\Images\indicator.gif" />
+    <Content Include="Content\Images\logo.jpg" />
+    <Content Include="Content\Images\position.png" />
+    <Content Include="Content\Images\signature.png" />
+    <Content Include="Content\Images\sticker.png" />
+    <Content Include="Content\Images\tick.png" />
+    <Content Include="Content\Scripts\jquery.timemachine.1.0.0.js" />
+    <Content Include="Content\Scripts\ui.clockpick-1.2.7.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Areas\ServiceSheet\Views\Web.config" />
+    <Content Include="Areas\Reporting\Views\Web.config" />
+    <Content Include="Deploy.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Content\word_templates\eletrical_service_quotation_template - Copy.docx" />
+    <Content Include="Content\word_templates\eletrical_service_quotation_template_automatic.docx" />
+    <Content Include="Content\word_templates\eletrical_service_quotation_template_automaticquotes.docx" />
+    <None Include="hibernate.cfg.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="Areas\Admin\Views\ReferenceData\Edit.aspx" />
+    <Content Include="Areas\Admin\Views\ReferenceData\List.aspx" />
+    <Content Include="Views\Shared\Bookings.ascx" />
+    <Content Include="Views\Shared\Availability.ascx" />
+    <Content Include="Views\Shared\ServicesByZone.ascx" />
+    <Content Include="Views\Shared\ProfileHeader.ascx" />
+    <Content Include="Views\Shared\PropertyFind.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+      <TransformOnBuild>true</TransformOnBuild>
+    </Content>
+    <Content Include="Content\Css\Site.css" />
+    <Content Include="Content\Scripts\jquery.validate.js" />
+    <Content Include="Content\Scripts\jquery.validate.min.js" />
+    <Content Include="Content\Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Content\Scripts\jquery.validate.min-vsdoc.js" />
+    <Content Include="Content\Scripts\MicrosoftAjax.js" />
+    <Content Include="Content\Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Content\Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Content\Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Views\Account\ChangePassword.aspx" />
+    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Shared\Error.aspx" />
+    <Content Include="Views\Shared\LogOnUserControl.ascx" />
+    <Content Include="Views\Shared\Site.Master" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\Shared\WideScreen.Master" />
+    <Content Include="Views\Shared\Print.Master" />
+    <Content Include="packages.config" />
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </Content>
+    <Content Include="Web.Staging.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </Content>
+    <Content Include="Web.KiandraStaging.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </Content>
+    <Content Include="Scripts\jquery-1.4.4.js" />
+    <Content Include="Scripts\jquery-1.4.4-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.4.min.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <None Include="Properties\PublishProfiles\RDI.pubxml" />
+    <None Include="Properties\PublishProfiles\TestingDetectorInspectorAzure.pubxml" />
+    <None Include="Web.StagingLocal.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Admin\Views\Help\ShowHelp.aspx" />
+    <Content Include="Areas\Admin\Views\Help\EditPage.aspx" />
+    <Content Include="Areas\Admin\Views\Help\Edit.aspx" />
+    <Content Include="Areas\Admin\Views\Help\Index.aspx" />
+    <Content Include="Areas\Admin\Views\Home\Index.aspx" />
+    <Content Include="Areas\Admin\Views\Role\Edit.aspx" />
+    <Content Include="Areas\Admin\Views\Role\Index.aspx" />
+    <Content Include="Areas\Admin\Views\ServiceItem\Edit.aspx" />
+    <Content Include="Areas\Admin\Views\ServiceItem\Index.aspx" />
+    <Content Include="Areas\Admin\Views\Suburb\Edit.aspx" />
+    <Content Include="Areas\Admin\Views\Suburb\Index.aspx" />
+    <Content Include="Areas\Admin\Views\User\ChangePassword.aspx" />
+    <Content Include="Areas\Admin\Views\User\Edit.aspx" />
+    <Content Include="Areas\Admin\Views\User\Index.aspx" />
+    <Content Include="Areas\Admin\Views\Web.config" />
+    <Content Include="Areas\Files\Views\Home\Edit.aspx" />
+    <Content Include="Areas\Files\Views\Home\Create.aspx" />
+    <Content Include="Areas\Files\Views\Home\Index.aspx" />
+    <Content Include="Areas\Files\Views\Web.config" />
+    <Content Include="Content\Images\actions.png" />
+    <Content Include="Content\Images\kiandra.gif" />
+    <Content Include="Content\Images\loading.gif" />
+    <Content Include="Content\Scripts\jquery.maskedinput-1.2.2.js" />
+    <Content Include="Content\Scripts\jquery.meio.mask-1.1.3.js" />
+    <Content Include="Content\Scripts\json2.js" />
+    <Content Include="antixssmodule.config" />
+    <Content Include="Areas\Agency\Views\Web.config" />
+    <Content Include="Areas\Technician\Views\Web.config" />
+    <Content Include="Areas\PropertyInfo\Views\Web.config" />
+    <Content Include="Areas\Booking\Views\Web.config" />
+    <None Include="nhibernate-configuration.xsd" />
+    <Content Include="Content\Scripts\MicrosoftMvcJQueryValidation.js" />
+    <Content Include="Content\Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Content\Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Views\Account\Profile.aspx" />
+    <Content Include="Views\Account\Register.aspx" />
+    <Content Include="Views\Account\RegisterThankYou.aspx" />
+    <Content Include="Views\Shared\CloseDialog.aspx" />
+    <Content Include="Areas\Admin\Views\Help\HelpNotFound.aspx" />
+    <Content Include="Views\Shared\PageHelp.ascx" />
+    <Content Include="Content\Scripts\tiny_mce\jquery.tinymce.js" />
+    <Content Include="Content\Scripts\tiny_mce\langs\en.js" />
+    <Content Include="Content\Scripts\tiny_mce\license.txt" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\advhr\css\advhr.css" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\advhr\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\advhr\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\advhr\js\rule.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\advhr\langs\en_dlg.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\advhr\rule.htm" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\advimage\css\advimage.css" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\advimage\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\advimage\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\advimage\image.htm" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\advimage\img\sample.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\advimage\js\image.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\advimage\langs\en_dlg.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\advlink\css\advlink.css" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\advlink\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\advlink\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\advlink\js\advlink.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\advlink\langs\en_dlg.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\advlink\link.htm" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\advlist\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\advlist\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\autoresize\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\autoresize\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\autosave\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\autosave\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\autosave\langs\en.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\bbcode\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\bbcode\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\contextmenu\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\contextmenu\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\directionality\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\directionality\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\emotions\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\emotions\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\emotions\emotions.htm" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\emotions\img\smiley-cool.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\emotions\img\smiley-cry.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\emotions\img\smiley-embarassed.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\emotions\img\smiley-foot-in-mouth.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\emotions\img\smiley-frown.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\emotions\img\smiley-innocent.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\emotions\img\smiley-kiss.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\emotions\img\smiley-laughing.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\emotions\img\smiley-money-mouth.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\emotions\img\smiley-sealed.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\emotions\img\smiley-smile.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\emotions\img\smiley-surprised.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\emotions\img\smiley-tongue-out.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\emotions\img\smiley-undecided.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\emotions\img\smiley-wink.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\emotions\img\smiley-yell.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\emotions\js\emotions.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\emotions\langs\en_dlg.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\example\dialog.htm" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\example\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\example\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\example\img\example.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\example\js\dialog.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\example\langs\en.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\example\langs\en_dlg.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\fullpage\css\fullpage.css" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\fullpage\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\fullpage\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\fullpage\fullpage.htm" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\fullpage\js\fullpage.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\fullpage\langs\en_dlg.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\fullscreen\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\fullscreen\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\fullscreen\fullscreen.htm" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\iespell\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\iespell\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\inlinepopups\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\inlinepopups\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\alert.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\button.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\buttons.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\confirm.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\corners.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\horizontal.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\vertical.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\inlinepopups\skins\clearlooks2\window.css" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\inlinepopups\template.htm" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\insertdatetime\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\insertdatetime\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\layer\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\layer\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\legacyoutput\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\legacyoutput\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\media\css\content.css" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\media\css\media.css" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\media\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\media\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\media\img\flash.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\media\img\flv_player.swf" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\media\img\quicktime.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\media\img\realmedia.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\media\img\shockwave.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\media\img\trans.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\media\img\windowsmedia.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\media\js\embed.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\media\js\media.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\media\langs\en_dlg.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\media\media.htm" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\nonbreaking\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\nonbreaking\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\noneditable\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\noneditable\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\pagebreak\css\content.css" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\pagebreak\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\pagebreak\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\pagebreak\img\pagebreak.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\pagebreak\img\trans.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\paste\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\paste\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\paste\js\pastetext.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\paste\js\pasteword.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\paste\langs\en_dlg.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\paste\pastetext.htm" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\paste\pasteword.htm" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\preview\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\preview\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\preview\example.html" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\preview\jscripts\embed.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\preview\preview.html" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\print\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\print\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\save\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\save\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\searchreplace\css\searchreplace.css" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\searchreplace\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\searchreplace\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\searchreplace\js\searchreplace.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\searchreplace\langs\en_dlg.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\searchreplace\searchreplace.htm" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\spellchecker\css\content.css" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\spellchecker\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\spellchecker\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\spellchecker\img\wline.gif" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\style\css\props.css" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\style\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\style\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\style\js\props.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\style\langs\en_dlg.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\style\props.htm" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\tabfocus\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\tabfocus\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\table\cell.htm" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\table\css\cell.css" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\table\css\row.css" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\table\css\table.css" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\table\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\table\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\table\js\cell.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\table\js\merge_cells.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\table\js\row.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\table\js\table.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\table\langs\en_dlg.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\table\merge_cells.htm" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\table\row.htm" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\table\table.htm" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\template\blank.htm" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\template\css\template.css" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\template\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\template\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\template\js\template.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\template\langs\en_dlg.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\template\template.htm" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\visualchars\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\visualchars\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\wordcount\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\wordcount\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\xhtmlxtras\abbr.htm" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\xhtmlxtras\acronym.htm" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\xhtmlxtras\attributes.htm" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\xhtmlxtras\cite.htm" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\xhtmlxtras\css\attributes.css" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\xhtmlxtras\css\popup.css" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\xhtmlxtras\del.htm" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\xhtmlxtras\editor_plugin.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\xhtmlxtras\editor_plugin_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\xhtmlxtras\ins.htm" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\xhtmlxtras\js\abbr.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\xhtmlxtras\js\acronym.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\xhtmlxtras\js\attributes.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\xhtmlxtras\js\cite.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\xhtmlxtras\js\del.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\xhtmlxtras\js\element_common.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\xhtmlxtras\js\ins.js" />
+    <Content Include="Content\Scripts\tiny_mce\plugins\xhtmlxtras\langs\en_dlg.js" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\about.htm" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\anchor.htm" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\charmap.htm" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\color_picker.htm" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\editor_template.js" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\editor_template_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\image.htm" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\img\colorpicker.jpg" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\img\icons.gif" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\js\about.js" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\js\anchor.js" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\js\charmap.js" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\js\color_picker.js" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\js\image.js" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\js\link.js" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\js\source_editor.js" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\langs\en.js" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\langs\en_dlg.js" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\link.htm" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\skins\default\content.css" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\skins\default\dialog.css" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\skins\default\img\buttons.png" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\skins\default\img\items.gif" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\skins\default\img\menu_arrow.gif" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\skins\default\img\menu_check.gif" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\skins\default\img\progress.gif" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\skins\default\img\tabs.gif" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\skins\default\ui.css" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\skins\o2k7\content.css" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\skins\o2k7\dialog.css" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\skins\o2k7\img\button_bg.png" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\skins\o2k7\img\button_bg_black.png" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\skins\o2k7\img\button_bg_silver.png" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\skins\o2k7\ui.css" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\skins\o2k7\ui_black.css" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\skins\o2k7\ui_silver.css" />
+    <Content Include="Content\Scripts\tiny_mce\themes\advanced\source_editor.htm" />
+    <Content Include="Content\Scripts\tiny_mce\themes\simple\editor_template.js" />
+    <Content Include="Content\Scripts\tiny_mce\themes\simple\editor_template_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\themes\simple\img\icons.gif" />
+    <Content Include="Content\Scripts\tiny_mce\themes\simple\langs\en.js" />
+    <Content Include="Content\Scripts\tiny_mce\themes\simple\skins\default\content.css" />
+    <Content Include="Content\Scripts\tiny_mce\themes\simple\skins\default\ui.css" />
+    <Content Include="Content\Scripts\tiny_mce\themes\simple\skins\o2k7\content.css" />
+    <Content Include="Content\Scripts\tiny_mce\themes\simple\skins\o2k7\img\button_bg.png" />
+    <Content Include="Content\Scripts\tiny_mce\themes\simple\skins\o2k7\ui.css" />
+    <Content Include="Content\Scripts\tiny_mce\tiny_mce.js" />
+    <Content Include="Content\Scripts\tiny_mce\tiny_mce_popup.js" />
+    <Content Include="Content\Scripts\tiny_mce\tiny_mce_src.js" />
+    <Content Include="Content\Scripts\tiny_mce\utils\editable_selects.js" />
+    <Content Include="Content\Scripts\tiny_mce\utils\form_utils.js" />
+    <Content Include="Content\Scripts\tiny_mce\utils\mctabs.js" />
+    <Content Include="Content\Scripts\tiny_mce\utils\validate.js" />
+    <Content Include="Views\Shared\Dialog.Master" />
+    <Content Include="Content\Css\Forms.css" />
+    <Content Include="Content\Css\jquery.autocomplete.css" />
+    <Content Include="Content\Scripts\jquery.autocomplete.js" />
+    <Content Include="Content\Scripts\jquery.form.js" />
+    <Content Include="Content\Scripts\jquery.select-complete.js" />
+    <Content Include="Content\Scripts\lib\jquery.bgiframe.min.js" />
+    <Content Include="Content\Scripts\Site.js" />
+    <Content Include="Views\Account\ForgottenPassword.aspx" />
+    <Content Include="Areas\Admin\Views\Notification\Edit.aspx" />
+    <Content Include="Areas\Admin\Views\Notification\Index.aspx" />
+    <Content Include="Views\Shared\AuditTrail.ascx" />
+    <Content Include="Views\Shared\NotImplemented.aspx" />
+    <Content Include="Views\Home\Dashboard.aspx" />
+    <Content Include="Areas\Admin\Views\ReferenceData\Index.aspx" />
+    <Content Include="Views\Shared\NotificationMessages.ascx" />
+    <Content Include="Views\Shared\UserProfile.ascx" />
+    <Content Include="Views\Shared\NewWindow.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Views\Shared\" />
+    <Folder Include="Areas\Agency\Views\Shared\" />
+    <Folder Include="Areas\Booking\Models\" />
+    <Folder Include="Areas\Booking\Views\Shared\" />
+    <Folder Include="Areas\Files\Views\Shared\" />
+    <Folder Include="Areas\PropertyInfo\Models\" />
+    <Folder Include="Areas\PropertyInfo\Views\Shared\" />
+    <Folder Include="Areas\Reporting\Models\" />
+    <Folder Include="Areas\Reporting\Views\Home\" />
+    <Folder Include="Areas\Reporting\Views\Shared\" />
+    <Folder Include="Areas\ServiceSheet\Models\" />
+    <Folder Include="Areas\ServiceSheet\Views\Shared\" />
+    <Folder Include="Areas\Technician\Views\Shared\" />
+    <Folder Include="Content\Scripts\tiny_mce\plugins\autosave\images\" />
+    <Folder Include="Invoice\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DetectorInspector.Common\DetectorInspector.Common.csproj">
+      <Project>{154101F3-90E1-499A-B6A4-79D4493BE6F4}</Project>
+      <Name>DetectorInspector.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DetectorInspector.Data\DetectorInspector.Data.csproj">
+      <Project>{0792E288-1BAB-4225-B979-B4CA9E792804}</Project>
+      <Name>DetectorInspector.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DetectorInspector.Model\DetectorInspector.Model.csproj">
+      <Project>{E996F7FC-5489-4BF5-BE3A-F71CCC906F24}</Project>
+      <Name>DetectorInspector.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'AzureTesting|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'AzureTesting|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'StagingLocal|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'StagingLocal|x86'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61074</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(SlowCheetahTargets)" Condition="Exists('$(SlowCheetahTargets)')" />
+</Project>

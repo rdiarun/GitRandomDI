@@ -1,0 +1,7 @@
+!TRNS,TRNSTYPE,DATE,ACCNT,AMOUNT,CLEAR,NAME,DOCNUM,CLASS,TOPRINT,ADDR1,ADDR2,ADDR3,ADDR4,NAMEISTAXABLE,PONUM,SADDR1,SADDR2,SADDR3,SADDR4,SADDR5,TERMS
+!SPL,TRNSTYPE,DATE,ACCNT,AMOUNT,CLEAR,CLASS,INVITEM,QNTY,PRICE,MEMO,TAXABLE,TAXCODE,TAXAMOUNT
+!ENDTRNS
+TRNS,INVOICE,03/31/14,Accounts Receivable,86.90,N,Agency 730:106-283 Street 49 Newtown,MCG106-14,Alex Ledda,Y,The Owner,C/- Agency 730,Street 138, VIC ,Y,"Í- -M_!Ä *\?H (eÈ0|Î",1300134563019600106031400008690,_________________________________,PROPERTY ADDRESS:,283 Street 49,Newtown VIC 3220,60 Days
+SPL,INVOICE,03/31/14,Sales:Annual Service3,-79.00,N,Alex Ledda,A3,-1,79.00,"Comprehensive service and call out fee - Battery replacement (where required), Grill vacuum cleaned (existing smoke detectors), Smoke test performed, Decibel test performed, complying with Building Commission Regulations & AS 3786.\n\n",Y,GST,-7.90
+ENDTRNS
+

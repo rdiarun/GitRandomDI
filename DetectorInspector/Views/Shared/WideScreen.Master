@@ -1,0 +1,193 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    <asp:ContentPlaceHolder ID="InitContent" runat="server" />
+    <title><%=Html.Encode(this.Page.Title ?? "Untitled Page") %> - DetectorInspector</title>
+
+    <%= Html.IncludeScript("~/Content/Scripts/jquery.min.js") %>
+    <%= Html.IncludeScript("~/Content/Scripts/jquery-ui.min.js") %>
+    <%= Html.IncludeScript("~/Content/Scripts/lib/jquery.bgiframe.min.js") %>
+    <%= Html.IncludeScript("~/Content/Scripts/jquery.validate.min.js") %>
+
+    <%= Html.IncludeScript("~/Content/Scripts/i18n/grid.locale-en.js")%>
+    <%= Html.IncludeScript("~/Content/Scripts/jquery.jqGrid.src.js") %>
+    <%= Html.IncludeScript("~/Content/Scripts/jquery.autocomplete.js") %>
+    <%= Html.IncludeScript("~/Content/Scripts/jquery.form.js") %>
+    <%= Html.IncludeScript("~/Content/Scripts/jquery.timemachine.1.0.0.js") %>
+
+    <%= Html.IncludeScript("~/Content/Scripts/jquery.meio.mask-1.1.3.js")%>
+    <%= Html.IncludeScript("~/Content/Scripts/jquery.autoNumeric.1.0.0.js")%>
+    <%= Html.IncludeScript("~/Content/Scripts/MicrosoftAjax.js")%>
+    <%= Html.IncludeScript("~/Content/Scripts/MicrosoftMvcAjax.js")%>
+    <%= Html.IncludeScript("~/Content/Scripts/MicrosoftMvcValidation.js")%>
+
+    <%= Html.IncludeScript("~/Content/Scripts/Site.js") %>
+
+    <%= Html.IncludeStyleSheet("~/Content/Css/jquery-ui.css") %>
+    <%= Html.IncludeStyleSheet("~/Content/Css/ui.jqgrid.css") %>
+    <%= Html.IncludeStyleSheet("~/Content/Css/jquery.autocomplete.css")%>
+    <%= Html.IncludeStyleSheet("~/Content/Css/ui.clockpick-1.2.7.css")%>
+    <%= Html.IncludeStyleSheet("~/Content/Css/Site.css") %>
+    <%= Html.IncludeStyleSheet("~/Content/Css/Forms.css") %>
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</head>
+<body class="<%= (ViewContext.RouteData.DataTokens["Area"] + " " + ViewContext.RouteData.Values["Controller"] + " " + ViewContext.RouteData.Values["Action"]).ToLower() %>">
+
+    <% Html.RenderPartial("NotificationMessages"); %>
+    <div id="header-wrapper">
+        <div id="header<%= ( DetectorInspector.ApplicationConfig.Current.DefaultStateId) %>">
+            <div id="logo">
+                <% if (SecurityExtensions.HasPermission(this.Context.User, Permission.AdministerSystem))
+                   { %>
+                <h1><a href="<%= Url.Action("Dashboard", "Home", new { area = "" }) %>"><span class="heading">Detector Inspector</span></a></h1>
+                <% } %>
+            </div>
+            <div id="login-display">
+                <% Html.RenderPartial("LogOnUserControl"); %>
+            </div>
+            <div id="search-bar">
+                <% if (SecurityExtensions.HasPermission(this.Context.User, Permission.AccessProperties))
+                   {
+                       Html.RenderPartial("PropertyFind");
+                   } %>
+            </div>
+            <div id="menu">
+                <ul>
+                    <% if (Request.IsAuthenticated)
+                       { %>
+
+                    <li>
+                        <h2><%= Html.ActionLink("Bookings", "Index", "Home", new { area = "Booking" }, null)%></h2>
+                        <ul>
+                            <li><%= Html.ActionLink("Service Sheets", "Index", "Home", new { area = "ServiceSheet" }, null)%></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2><%= Html.ActionLink("Properties", "Index", "Home", new { area = "PropertyInfo" }, null)%></h2>
+                    </li>
+                    <li>
+                        <h2><%= Html.ActionLink("Technicians", "Index", "Home", new { area = "Technician" }, null)%></h2>
+                    </li>
+
+                    <li>
+                        <h2><%= Html.ActionLink("Agencies", "Index", "Home", new { area = "Agency" }, null)%></h2>
+                        <ul>
+                            <li><%= Html.ActionLink("Agency Groups", "Index", "AgencyGroup", new { area = "Agency" }, null)%></li>
+                        </ul> 
+                    </li>      
+                    <% if (SecurityExtensions.HasPermission(this.Context.User, Permission.AdministerSystem))
+                       {%>
+                    <li>
+
+                        <h2><%= Html.ActionLink("Administration", "Index", "Home", new { area = "Admin" }, null)%></h2>
+                        <ul>
+
+                            <li><%= Html.ActionLink("Import", "Index", "Import", new { area = "Admin" }, null)%></li>
+                            <li><%= Html.RouteLink("Reference Data", "ManageReferenceDataHome")%></li>
+                            <li><%= Html.ActionLink("Notifications", "Index", "Notification", new { area = "Admin" }, null)%></li>
+                            <li><%= Html.ActionLink("Users", "Index", "User", new { area = "Admin" }, null)%></li>
+                        </ul>
+                    </li>
+                    <% }%>
+
+                    <% } %>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="content-body-wrapper">
+
+        <div id="content-body" style="width: 1580px;">
+            <div id="content">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+
+                <%--<% Html.RenderAction("PageHelp"); %>--%>
+
+                <div class="clear"></div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer-wrapper">
+
+        <div id="footer">
+            <div id="version">Version: <%= Html.Version() %></div>
+            <div id="credits">
+                <a id="software-development" target="_blank" title="Software development" href="http://kiandra.com.au/software-solutions/software-development.aspx">software development</a>
+                by
+                <a id="kiandra" target="_blank" href="http://kiandra.com.au/">kiandra</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        var _applicationRoot = '<%=Page.ResolveUrl("~/") %>';
+
+
+        var windowWidth = 970;
+        var windowHeight = screen.height - 100;
+        var left = (screen.width - windowWidth) / 2;
+        var top = 0;
+
+
+        function newPropertyInfo() {
+
+            $.ajax({
+                url: '<%= Url.Action("Create", "Home", new { area = "PropertyInfo"}) %>',
+                dataType: 'json',
+                success: function (result) {
+                    var id = result.id;
+                    var url = '<%= Url.Action("Edit", "Home", new { area = "PropertyInfo", id = "__ID__" }) %>'.replace(/__ID__/g, id);
+
+                    window.open(url, 'PropertyInfo' + id, 'status=1,toolbar=0,location=0,menubar=0,directories=0,resizable=0,scrollbars=1,height=' + windowHeight + ',width=' + windowWidth + ',left=' + left + ',top=' + top);
+
+                }
+            });
+
+        }
+
+        function openPropertyInfo(id) {
+
+            var url = '<%= Url.Action("View", "Home", new { area = "PropertyInfo", id = "__ID__" }) %>'.replace(/__ID__/g, id);
+
+            window.open(url, 'PropertyInfo' + id, 'status=1,toolbar=0,location=0,menubar=0,directories=0,resizable=0,scrollbars=1,height=' + windowHeight + ',width=' + windowWidth + ',left=' + left + ',top=' + top);
+        }
+
+        function newBooking(propertyId) {
+
+            var url = '<%= Url.Action("Edit", "Home", new { area = "Booking", id = 0 }) %>';
+            if (propertyId != undefined) {
+                url = '<%= Url.Action("Edit", "Home", new { area = "Booking", id = 0, propertyInfoId="__PROPERTYID__" }) %>'.replace(/__PROPERTYID__/g, propertyId);
+            }
+
+            window.open(url, 'Booking', 'status=1,toolbar=0,location=0,menubar=0,directories=0,resizable=0,scrollbars=1,height=' + windowHeight + ',width=' + windowWidth + ',left=' + left + ',top=' + top);
+        }
+
+        function openBooking(id, propertyId, isService) {
+            var url = '<%= Url.Action("Edit", "Home", new { area = "Booking", id = "__ID__" }) %>'.replace(/__ID__/g, id);
+            if (isService) {
+                url = '<%= Url.Action("Edit", "Home", new { area = "ServiceSheet", id = "__ID__" }) %>'.replace(/__ID__/g, id);
+            }
+            if (propertyId != undefined) {
+                if (isService) {
+                    url = '<%= Url.Action("Edit", "Home", new { area = "ServiceSheet", id = "__ID__", propertyInfoId="__PROPERTYID__" }) %>'.replace(/__ID__/g, id).replace(/__PROPERTYID__/g, propertyId);
+                }
+                else {
+                    url = '<%= Url.Action("Edit", "Home", new { area = "Booking", id = "__ID__", propertyInfoId="__PROPERTYID__" }) %>'.replace(/__ID__/g, id).replace(/__PROPERTYID__/g, propertyId);
+                }
+            }
+
+            window.open(url, 'Booking' + id, 'status=1,toolbar=0,location=0,menubar=0,directories=0,resizable=0,scrollbars=1,height=' + windowHeight + ',width=' + windowWidth + ',left=' + left + ',top=' + top);
+        }
+    </script>
+</body>
+</html>

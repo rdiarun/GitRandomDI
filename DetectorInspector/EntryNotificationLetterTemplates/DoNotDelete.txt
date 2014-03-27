@@ -1,0 +1,3 @@
+﻿This folder is used to store the Entry Notification letters for each Agency.
+Letters are expected to be MS Word format, and are store by Agency Id
+e.g. 214.doc

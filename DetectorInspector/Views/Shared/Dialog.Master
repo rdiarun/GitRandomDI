@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+<asp:ContentPlaceHolder ID="InitContent" runat="server" />
+
+<head id="Head1" runat="server" visible=false/>
+<div id="dialog-container">
+
+    <%= Html.Hidden("page-isvalid", ViewData.ModelState.IsValid) %>
+
+    <%= Html.Hidden("page-title", Page.Title)%>
+
+    <div class="dialog">
+       
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                   
+    </div>
+
+    <% if (ViewData.ModelState.IsValid) { %>
+    <div id="dialog-success">
+        <asp:ContentPlaceHolder ID="OnSuccessContent" runat="server" />
+            
+        <script type="text/javascript">
+            //set notification message
+        </script>
+    </div>
+    <% }%>
+
+</div>

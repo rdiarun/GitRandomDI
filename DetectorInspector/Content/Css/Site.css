@@ -1,0 +1,576 @@
+﻿/* Resets 
+    CSS Document - http://meyerweb.com/eric/tools/css/reset/index.html */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, textarea {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;	
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style-image:none;
+    list-style-position:outside;
+    list-style-type:disc;
+    padding-left: 25px;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end of resets */
+
+body, textarea, td {    
+   
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+
+body {
+     font-size: 0.7em;
+}
+
+
+body.dialog
+{
+    background: #FFFFFF;
+}
+
+a
+{
+    color: #000000;
+    text-decoration: underline;
+}
+
+a:hover
+{
+    color: #666666;
+    text-decoration: none;
+}
+a:active
+{
+    color: #666666;
+    text-decoration: none;
+}
+
+p, ul
+{
+    margin-bottom: 20px;
+    line-height: 1.6em;
+}
+
+ul
+{
+    padding-left: 15px;   
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.5em;
+    color: #000;
+}
+
+h1 {
+    font-size: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    margin: 0 0 10px 0;
+}
+
+h3 {
+    font-size: 1em;
+    height: 24px;
+    line-height: 14px;
+    margin: 0 0 10px 0;
+}
+
+h4,h5, h6 {
+    font-size: 1em;
+}
+
+/* Tables   
+----------------------------------------------------------*/
+
+table 
+{  
+  border-collapse: collapse;
+}
+
+table td 
+{
+  padding: 5px;     
+  /*vertical-align:middle;*/
+}
+
+table th
+{
+  padding: 6px 5px;
+  text-align: left;  
+}
+
+
+/* Header */
+
+#header-wrapper  {
+    height:100px;
+    border-bottom:1px solid #CCCCCC;
+}
+
+/* Different header for each state code, e.g. 7 = vic*/
+#header7 {    
+    width:990px;
+    height: 100px;
+    margin:0 auto;		   
+    background: url(../images/logo.jpg) no-repeat left top;
+}
+/* Different header for each state code, e.g. 6 = tas */
+#header6 {    
+    width:990px;
+    height: 100px;
+    margin:0 auto;		   
+    background: url(../images/logo_tasmania.jpg) no-repeat left top;
+}
+
+/* Logo */
+
+#logo {
+	float: left;
+	display:inline;		
+}
+
+#logo h1 a {    	
+    display:block;
+    height:100px;
+    width:259px;
+}
+
+#logo h1 a span {  
+    display:none;
+}
+
+/* notification message */
+
+#notification-message-wrapper {  
+    position:absolute;
+    width:100%;
+    top:10px;    
+}
+
+#notification-message {  
+
+    padding: 5px 10px;
+    margin: 0 auto;
+    width:700px;    
+    
+}
+
+#notification-message span {    
+    line-height:16px;
+}
+
+#notification-message-icon {   
+    padding: 0; 
+    margin:0 5px 0 0;
+    float:left;
+}
+
+#notification-message-title {
+    font-weight:bold;
+}
+
+/* Page */
+
+#content-body-wrapper {
+  border-bottom:1px solid #CCCCCC;  
+}
+
+#content-body {    
+    width:990px;
+    margin:0 auto;	
+}
+
+#content {    
+    margin:15px 20px;
+    /*min height */
+    min-height:450px;
+    height:auto !important;
+    height:450px;
+}
+
+/* Footer */
+#footer-wrapper {    
+
+}
+
+#footer {
+    width: 990px;
+	margin: 0 auto;
+	height: 80px;		
+	
+	
+}
+
+#footer a {
+	color: #666666;
+	
+}
+
+#version {
+    margin: 10px 0 0 20px;  
+    width:250px;
+    float:left;
+    color:#CCCCCC;	
+}
+
+#credits {
+    margin: 10px 0 0 0;
+    height:12px;
+    width:250px;
+    float:right;
+    color:#CCCCCC;
+	text-align:right;
+}
+
+#credits a {
+    color:#CCCCCC;
+    text-decoration:underline;
+    background: none;
+    padding:0;
+}
+
+a#kiandra {
+	padding-right:15px; 
+	background: url(../images/kiandra.gif);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-attachment:scroll;
+	background-position: right 0px;
+	outline:none;
+}
+
+#kiandra:hover { background-position: right -14px; }
+
+
+/* Menu */
+
+#menu {
+	float: right;
+	margin: 43px 0 0 0;
+}
+
+#menu ul {
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    padding:0;
+    margin:0;
+}
+
+#menu li {
+	float:left;	
+}
+
+#menu h2 {	
+    margin:0px;
+    padding:0px;
+    font-weight:normal;
+    font-size:1em;
+}
+
+#menu a {	
+	text-decoration: none;	
+	font-weight:bold;
+	padding:0 16px;
+	display:block;
+	line-height:36px;
+	color: #333333;
+}
+
+#menu li:hover, #menu li.hover {	   
+}
+
+
+#menu a:hover {	
+}
+
+/* 2nd level */
+
+#menu li ul { 
+    display: none;     
+    position:absolute;   
+    margin: 0px 0px 0px 0px;
+    z-index:1000;
+    line-height: 120%;   
+    background:#333333;
+    width: 150px; 
+}
+
+#menu li:hover ul ,
+#menu li.hover ul 
+{ 
+    display: block;     
+}
+
+#menu li ul li {
+	float:none;
+	display:block;	
+	color: #333333;	
+	width:auto;
+}
+
+#menu li ul li a 
+{
+	line-height:27px;
+    margin: 0px;
+	font-size: 0.9em;
+	overflow:hidden;
+	font-family:Arial;
+	color: #FFFFFF;	
+}
+
+#menu li ul li a:hover {
+    color:#FFFFFF;
+    text-decoration: underline;
+    background-color:#000000;
+}
+
+
+#search-bar {
+    float:right;
+    clear:right;
+    margin-top: 48px;
+    width: 150px;
+    height: 28px;
+}
+
+/* project menu */
+.menuIframe
+{
+    position:absolute;
+    border:0px ;
+    display:block;
+    z-index:0;
+}
+
+/* override jquery tabs - get tabs working for 2 levels*/
+.ui-widget-content {
+    color:#000000;
+}
+
+.ui-widget {
+    font-family:Tahoma,Arial,Helvetica,sans-serif;    
+}
+
+.ui-tabs .ui-tabs-nav li 
+{
+    margin-bottom:0px;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected
+{
+    margin-bottom:-1px;
+}
+
+#validation-message li
+{
+    padding-left: 10px;
+}
+
+
+/* MISC  
+----------------------------------------------------------*/
+div.clear { 
+    clear: both; 
+}
+
+.divider
+{
+    border-top: solid 1px #CCCCCC;
+}
+
+#login-display
+{
+    color:#333333;
+    float:right;
+  
+    text-align:right;   
+    margin:10px 5px 0 0;
+    width:600px;
+}
+
+#login-display a
+{
+    margin:0 0 0 10px;
+}
+
+#login-display a:link
+{
+    color: #333333;
+    text-decoration: underline;
+}
+
+#login-display a:visited
+{
+    color: #333333;
+    text-decoration: underline;
+}
+
+#login-display a:hover
+{
+    color: #333333;
+    text-decoration: none;
+}
+
+#new-window #content-body
+{
+    width: 950px;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+input.ui-state-error-text
+{
+    color: #000000;
+    background-color: #ffeeee;
+}
+
+
+.trail
+{
+    margin: 10px 0px 0px 0px;
+  
+}
+
+
+
+.partial-header
+{
+    margin: 5px 0px 0px 0px;
+}
+
+
+#audit-dialog
+{
+    padding: 0;
+}
+
+#audit-dialog .ui-jqgrid
+{
+    margin: 5px auto;
+}
+
+.ui-subtblcell td
+{
+    padding: 3px 4px;
+}
+
+div.row span#property-label { height: 88px; }
+
+.instructions
+{
+    padding-bottom: 10px;
+}
+
+#dialog-loading {
+    background: url(../images/loading.gif) no-repeat top center;
+    height:50px;
+    display:block;
+    margin:100px 0 0;
+    padding:40px 0 0;
+    text-align:center;
+}
+
+
+.spacer
+{
+    height: 5px;
+}
+
+.print-row
+{
+    margin:0px;
+    padding: 0px;
+}
+
+.print-header
+{
+    font-weight: bold;
+    display: inline-block;
+    border-bottom: 1px solid #EEEEEE;
+    background: #EEEEEE;
+    padding: 5px;
+    margin: 0px;
+    height: 11px;
+    line-height: 11px;
+}
+
+.print-cell
+{
+    height: 11px;
+    line-height: 11px;
+    margin: 0px;
+    padding: 5px;
+    display: inline-block;
+}
+
+table.service-sheet td {
+    padding: 2px;
+    text-align: left;
+}
+
+table.service-sheet th {
+    padding: 2px;
+    text-align: left;
+}
+
+table.service-sheet input {
+    padding: 0px;
+    margin: 0px;
+}

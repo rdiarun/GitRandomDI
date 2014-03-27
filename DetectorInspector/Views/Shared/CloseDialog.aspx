@@ -1,0 +1,1 @@
+<%@ Page Language="C#"  MasterPageFile="~/Views/Shared/Dialog.Master"  %>
