@@ -1,0 +1,6 @@
+
+CREATE NONCLUSTERED INDEX ix_Booking_Date ON [dbo].[Booking]([Date]) INCLUDE ([BookingId],[TechnicianId],[ZoneId]) 
+
+CREATE NONCLUSTERED INDEX ix_ServiceSheet_BookingId_IsCompleted ON [dbo].[ServiceSheet]([BookingId],[IsCompleted])
+
+CREATE NONCLUSTERED INDEX ix_ServiceSheet_IsCompleted ON [dbo].[ServiceSheet]([IsCompleted]) INCLUDE ([BookingId])
